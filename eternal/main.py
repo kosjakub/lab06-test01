@@ -1,3 +1,4 @@
+import calendar
 import sys
 import argparse
 
@@ -10,7 +11,11 @@ def calculate(year, month, day):
     :param day:
     :return:
     """
-    return year + month + day
+    try:
+        c = calendar.weekday(year, month, day)
+    except:
+        c = -1
+    return c
 
 
 def main(args):

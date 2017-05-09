@@ -16,10 +16,10 @@ class TestDummy(unittest.TestCase):
         self.assertEqual(weekday, 4)
 
         weekday = calculate(1, 1, 1)
-        self.assertEqual(weekday, 5)
+        self.assertEqual(weekday, 0)
 
         weekday = calculate(-1, 12, 31)
-        self.assertEqual(weekday, 4)
+        self.assertEqual(weekday, -1)
         
      
 
